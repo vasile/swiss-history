@@ -1,57 +1,73 @@
 [
     {
         "date": "1291",
-        "title": "Federal Charter of 1291",
+        "title": "Eternal Alliance (Birth of the Swiss Confederation)",
         "link": "http://en.wikipedia.org/wiki/Federal_Charter_of_1291",
-        "add": ["uri", "small_schwyz", "unterwalden"]
+        "add": ["UR", "SZ", "NW", "OW"]
     },
     {
-        "date": "1350",
-        "title": "Division of Obwalden and Nidwalden",
-        "link": "http://en.wikipedia.org/wiki/Unterwalden",
-        "add": ["obwalden_small", "nidwalden"],
-        "remove": ["unterwalden"]
+        "date": "1332",
+        "title": "Charter of the City of Lucerne",
+        "notes": "In the beginning only the city itself joined and later more territories were added",
+        "link": "https://en.wikipedia.org/wiki/Canton_of_Lucerne#Foundation_of_Lucerne_city",
+        "add": ["LU"]
     },
     {
-        "date": "1440",
-        "title": "Schwyz Expansion",
-        "link": "http://en.wikipedia.org/wiki/Canton_of_Schwyz",
-        "add": ["schwyz"],
-        "remove": ["small_schwyz"]
+        "date": "1351",
+        "title": "Zürich joins the Swiss Confederation",
+        "notes": "In the beginning only the city itself joined and later more territories were added",
+        "link": "http://en.wikipedia.org/wiki/History_of_Zurich#Old_Swiss_Confederacy",
+        "add": ["ZH"]
     },
     {
-        "date": "1798",
-        "title": "Helvetic Republic",
-        "link": "http://en.wikipedia.org/wiki/Helvetic_Republic",
-        "add": ["waldstaetten"],
-        "remove": ["uri", "schwyz", "obwalden_small", "nidwalden"]
+        "date": "1352",
+        "title": "Glarus and Zug join the Swiss Confederation",
+        "link": "http://en.wikipedia.org/wiki/Acht_Orte#Expansion_to_the_Acht_Orte",
+        "add": ["GL", "ZG"]
+    },
+    {
+        "date": "1353",
+        "title": "Bern joins the Swiss Confederation",
+        "notes": "In 1815 Jura was given to Bern but in 1978 split and joined the confederation in 1979",
+        "link": "http://en.wikipedia.org/wiki/History_of_Bern#Old_Swiss_Confederacy",
+        "add": ["BE"]
+    },
+    {
+        "date": "1481",
+        "title": "Fribourg and Solothurn join the Swiss Confederation",
+        "link": "http://en.wikipedia.org/wiki/Thirteen_Cantons#Thirteen_Cantons",
+        "add": ["FR", "SO"]
+    },
+    {
+        "date": "1501",
+        "title": "Schaffhausen and Basel joins the Swiss Confederation",
+        "notes": "Basel-Landschaft separated later in 1833",
+        "link": "http://en.wikipedia.org/wiki/Thirteen_Cantons#Thirteen_Cantons",
+        "add": ["SH", "BS", "BL"]
+    },
+    {
+        "date": "1513",
+        "title": "Appenzell joins the Swiss Confederation",
+        "notes": "In 1525 the canton was split in two parts: Appenzell Ausserrhoden and Appenzell Innerrhoden",
+        "link": "http://en.wikipedia.org/wiki/Appenzell_Ausserrhoden#Independence_and_joining_the_Swiss_Confederation",
+        "add": ["AR", "AI"]
     },
     {
         "date": "1803",
         "title": "Act of Mediation",
         "link": "http://en.wikipedia.org/wiki/Act_of_Mediation",
-        "add": ["uri", "schwyz", "obwalden_small", "nidwalden"],
-        "remove": ["waldstaetten"]
+        "add": ["AG", "GR", "TG", "TI", "VD", "SG"]
     },
     {
         "date": "1815",
-        "title": "Engelberg Abbey joins Obwalden",
-        "link": "https://en.wikipedia.org/wiki/Obwalden",
-        "add": ["obwalden"],
-        "remove": ["obwalden_small"]
+        "title": "Geneva, Neuchâtel and Valais joins the Swiss Confederation",
+        "link": "http://en.wikipedia.org/wiki/Swiss_Confederation#Napoleonic_era",
+        "add": ["GE", "NE", "VS"]
     },
     {
-        "date": "1831",
-        "title": "Outer Schwyz",
-        "link": "http://en.wikipedia.org/wiki/Outer_Schwyz",
-        "add": ["small_schwyz", "outer_schwyz"],
-        "remove": ["schwyz"]
-    },
-    {
-        "date": "1833",
-        "title": "Schwyz reunited",
-        "link": "http://en.wikipedia.org/wiki/Canton_of_Schwyz",
-        "add": ["schwyz"],
-        "remove": ["small_schwyz", "outer_schwyz"]
+        "date": "1979",
+        "title": "Jurassic separatism",
+        "link": "http://en.wikipedia.org/wiki/Jurassic_separatism",
+        "add": ["JU"]
     }
 ]
