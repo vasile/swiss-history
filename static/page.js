@@ -65,8 +65,27 @@ $(document).ready(function() {
         var overlays = [];
         
         $.each(data.features, function(k, geojson_feature) {
+            var polygon_coordinates = null;
+            
+            if (geojson_feature.geometry.type === 'Polygon') {
+                polygon_coordinates = geojson_feature.geometry.coordinates;
+            }
+            
+            if (geojson_feature.geometry.type === 'MultiPolygon') {
+                polygon_coordinates = [];
+                $.each(geojson_feature.geometry.coordinates, function(k, group_coordinates) {
+                    polygon_coordinates = polygon_coordinates.concat(group_coordinates);
+                });
+            }
+            
+            if (polygon_coordinates === null) {
+                console.log('Skipping unknown geometry');
+                console.log(geojson_feature);
+                return;
+            }
+            
             var paths = [];
-            $.each(geojson_feature.geometry.coordinates, function(k, path_coordinates) {
+            $.each(polygon_coordinates, function(k, path_coordinates) {
                 var path = [];
                 $.each(path_coordinates, function(k, point_coordinates) {
                     var point = new google.maps.LatLng(point_coordinates[1], point_coordinates[0]);
