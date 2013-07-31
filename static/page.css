@@ -1,6 +1,6 @@
 body {
-  padding-top: 60px;
-  padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
 #map_canvas {
@@ -41,4 +41,41 @@ body {
 
 hr {
     margin: 5px 0px;
+}
+
+/* START Small screens */
+body.mobile {
+    margin-top: 0px;
+    padding-top: 5px;
+}
+
+body.mobile #github_badge {
+    display: none;
+}
+
+body.mobile .navbar {
+    display: none;
+}
+
+body.mobile h2 {
+    font-size: 1.2em;
+    line-height: 1em;
+}
+
+body.mobile h4 {
+    font-size: 0.8em;
+    line-height: 1em;
+    margin: 2px 0px;
+}
+
+body.mobile #social {
+    display: none;
+}
+
+body.mobile #timeline_wrapper {
+    font-size: 8px;
+}
+
+body.mobile #notes_block {
+    font-size: 10px;
 }

@@ -1,4 +1,17 @@
 $(document).ready(function() {
+    var ua_is_mobile = navigator.userAgent.indexOf('iPhone') !== -1 || navigator.userAgent.indexOf('Android') !== -1;
+    if (ua_is_mobile) {
+        $('body').addClass('mobile');
+    }
+    
+    var viewportHeight = $(window).height();
+    if (viewportHeight < 1024) {
+        $('#map_canvas').height(parseInt(viewportHeight * 0.6, 10));
+        var minZoom = 6;
+    } else {
+        var minZoom = 8;
+    }
+    
     google.maps.visualRefresh = true;
     
     var mapStyles = [
@@ -55,7 +68,7 @@ $(document).ready(function() {
         styles: mapStyles,
         keyboardShortcuts: false,
         scrollwheel: false,
-        minZoom: 8,
+        minZoom: minZoom,
         maxZoom: 12
     });
     map.fitBounds(swiss_bounds);
@@ -177,6 +190,7 @@ $(document).ready(function() {
                     updateEvent(ui.value);
                 }
             });
+            $('#timeline').draggable();
 
             updateEvent(0);
         });
