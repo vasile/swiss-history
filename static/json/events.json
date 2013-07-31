@@ -1,0 +1,57 @@
+[
+    {
+        "date": "1291",
+        "title": "Federal Charter of 1291",
+        "link": "http://en.wikipedia.org/wiki/Federal_Charter_of_1291",
+        "add": ["uri", "small_schwyz", "unterwalden"]
+    },
+    {
+        "date": "1350",
+        "title": "Division of Obwalden and Nidwalden",
+        "link": "http://en.wikipedia.org/wiki/Unterwalden",
+        "add": ["obwalden_small", "nidwalden"],
+        "remove": ["unterwalden"]
+    },
+    {
+        "date": "1440",
+        "title": "Schwyz Expansion",
+        "link": "http://en.wikipedia.org/wiki/Canton_of_Schwyz",
+        "add": ["schwyz"],
+        "remove": ["small_schwyz"]
+    },
+    {
+        "date": "1798",
+        "title": "Helvetic Republic",
+        "link": "http://en.wikipedia.org/wiki/Helvetic_Republic",
+        "add": ["waldstaetten"],
+        "remove": ["uri", "schwyz", "obwalden_small", "nidwalden"]
+    },
+    {
+        "date": "1803",
+        "title": "Act of Mediation",
+        "link": "http://en.wikipedia.org/wiki/Act_of_Mediation",
+        "add": ["uri", "schwyz", "obwalden_small", "nidwalden"],
+        "remove": ["waldstaetten"]
+    },
+    {
+        "date": "1815",
+        "title": "Engelberg Abbey joins Obwalden",
+        "link": "https://en.wikipedia.org/wiki/Obwalden",
+        "add": ["obwalden"],
+        "remove": ["obwalden_small"]
+    },
+    {
+        "date": "1831",
+        "title": "Outer Schwyz",
+        "link": "http://en.wikipedia.org/wiki/Outer_Schwyz",
+        "add": ["small_schwyz", "outer_schwyz"],
+        "remove": ["schwyz"]
+    },
+    {
+        "date": "1833",
+        "title": "Schwyz reunited",
+        "link": "http://en.wikipedia.org/wiki/Canton_of_Schwyz",
+        "add": ["schwyz"],
+        "remove": ["small_schwyz", "outer_schwyz"]
+    }
+]
