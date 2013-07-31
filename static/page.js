@@ -32,10 +32,16 @@ $(document).ready(function() {
         ]
       },{
         "featureType": "road",
+        "elementType": "labels",
         "stylers": [
           { "visibility": "off" }
         ]
       },{
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+          { "visibility": "simplified" }
+        ]
       }
     ];
     
@@ -46,7 +52,11 @@ $(document).ready(function() {
     
     var map = new google.maps.Map($('#map_canvas')[0], {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        styles: mapStyles
+        styles: mapStyles,
+        keyboardShortcuts: false,
+        scrollwheel: false,
+        minZoom: 8,
+        maxZoom: 12
     });
     map.fitBounds(swiss_bounds);
     
@@ -110,7 +120,15 @@ $(document).ready(function() {
         $.getJSON('static/json/events.json', function(data) {
             function updateEvent(k) {
                 var event = data[k];
-                $('#event').text(event.title);
+                $('#event').text('Year ' + event.date + ': ' + event.title);
+                
+                if ((typeof event.notes) === 'undefined') {
+                    $('#notes').text('');
+                } else {
+                    $('#notes').text(event.notes + '. ');
+                }
+                
+                $('#more_info_link').attr('href', event.link);
                 
                 $.each(overlays, function(k, overlay){
                     var key = overlay.get('key');

@@ -1,3 +1,12 @@
+<FilesMatch "\.(html|htm)$">
+    FileETag None
+    Header unset ETag
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+    Header Set Cache-Control "private"
+    Header set Pragma "no-cache"
+    Header set Expires "Thu, 01 Jan 1970 00:00:00 GMT"
+</FilesMatch>
+
 <IfModule mod_deflate.c>
     <FilesMatch "\.(js|json|geojson|css)$">
         SetOutputFilter DEFLATE
